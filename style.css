@@ -1,0 +1,520 @@
+@font-face{
+    font-family: "Medium";
+    src: url("font/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: "Light";
+    src: url("font/Roboto-Light.ttf");
+}
+@font-face{
+    font-family: "Regular";
+    src: url("font/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: "Bold";
+    src: url("font/Roboto-Bold.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Light";
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+.button {
+    display: block;
+    width: max-content;
+    font-size: 16px;
+    padding: 15px 24px;
+    border-radius: 64px;
+    transition: background-color 0.3s ease;
+
+}
+.button-white {
+   background-color: white;
+   color: black;
+}
+.button-black {
+    background-color: black;  
+    color: white;
+}
+.button:hover{
+    background-color:  #DED1C1;;
+    color: black;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+/* header nav */
+.cin{
+    background-color:  #000F9F;
+    padding-top: 8px;
+    text-align: center;
+    height: 35px;
+    color: white;
+    font-size: 13px;
+}
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav{
+    margin-left: 120px;
+    margin-right: 95px;
+}
+header .menu {
+    gap: 24px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 71px;
+}
+.menu{
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+}
+.dop-menu{
+    display: flex;
+    margin: 16px;
+}
+.logo{
+    margin: 0 auto;
+    font-family: "Regular";
+}
+
+
+/* header startscreen */
+.Ex{
+    font-size: 66px;
+    width: 400px;
+}
+.hero {
+    display: flex;
+    height: 810px;
+    background: url("img/header.png") no-repeat  center #DED1C1;;
+    justify-content: end;
+}  
+.text { 
+    color: #ffffff;
+    margin-right: 100px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}    
+.hero p {
+    font-size: 24px;
+    width: 501px;
+    margin-top: 38px;
+}
+header .button {
+    margin-top: 38px;
+}
+/* header- fin */
+
+
+/* main */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 105px;
+    padding-bottom: 18px;
+    padding-inline: 100px;
+    font-family: "Medium";
+}
+.description {
+    padding-top: 10px;
+    margin: 4px;
+    font-size: 23px;
+    text-align: center;
+}
+.minit{
+    padding-top: 13px;
+    font-size: 12px; 
+    color:gray;
+    text-align: center;
+}
+
+
+/* section2 */
+.block {
+    padding-top: 84px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.colmn h2 {
+    font-size: 61px;
+    line-height: 1.2; 
+}
+.colmn p {
+    margin-top: 38px;
+    width: 552px;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+/* section2 fin */
+
+
+/* section 5 */
+.row1 {
+    padding-top: 84px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+
+}
+.row1 div{
+    width: 719px;
+    height: 719px;
+    color: white;
+    line-height: 719px;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Medium";
+}
+.column1 {
+    background-size: 100%;
+    background: url("img/run.png") no-repeat 
+}
+.column2{
+    background-size: 100%;
+    background: url("img/nig2.png") no-repeat;
+}
+/* section5  fin */
+
+
+
+/* section 6 */
+.tex {
+      margin-left: 108px;
+}
+.t1{
+    font-size: 71px;
+    width: 1058px;
+    margin-top: 20px;
+    line-height: 88px;
+    letter-spacing: 3.5px;
+    font-size: "Regular";
+}
+.t2{
+    font-family: "Bold";
+    font-size: 64px;
+    line-height: 88px;
+    letter-spacing: 3.5px;
+}
+.t3{
+    display: flex;
+    align-items: center;
+}
+/* section 6 */
+
+
+/* слайдер стрелки */
+.slider {
+    min-width: 100%; 
+    position: relative;
+    max-width: 600px; 
+    margin: auto;
+    overflow: hidden; 
+}
+.slides {
+    display: flex; 
+    transition: transform 2s ease;
+}
+.slide  {
+    min-width: 100%; 
+    text-align: center; 
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0%;
+}
+.finish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 18px;
+    padding-inline: 100px;
+}
+.left, .right {
+    cursor: pointer; 
+    position: absolute;
+    top: 50%;
+    margin:56;
+    align-items: center;   
+}
+.left{ 
+    left: 0; 
+}
+.right {
+      right: 0;
+}
+/* слайдер стрелки */
+
+/* слайдер шоу  */
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.slideshow {
+    display: flex; 
+    transition: transform 2s ease;
+}
+.mySlides {
+    min-width: 100%; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+}
+.mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.prev,
+.next {
+    cursor: pointer;
+    transform: translateY(-50%);
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.prev {
+    left: 15px;
+}
+.next {
+    right: 15px;
+}
+/* слайдер шоу  */
+
+
+.burger{
+    cursor: pointer;
+    display: none;
+}
+.lineB{
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0 ;
+    transition: all 0.3s ease;
+}
+.active .lineB:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.active .lineB:nth-child(2){
+    opacity: 0;
+}
+.active .lineB:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+    .container, section {
+        width: 100%;
+    }
+    .button{
+        display: block;
+        justify-content: center;
+    }
+    .burger{
+        cursor: pointer;
+        display: block;
+        margin: auto 10px;
+    }
+    header .menu{
+        display: none;
+    }
+    header nav .show-menu{
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #DED1C1;
+        padding: 20px;
+    }
+
+
+/* header */
+
+
+header ul {
+    display: flex;
+    flex-wrap: wrap; 
+}
+nav {
+    margin: 0 auto; 
+}
+.logo {
+    margin: 0 auto;
+    font-family: "Regular";
+}
+.text{
+    margin: 60px;
+}
+.Ex{
+    font-size: 30px;
+    width: 250px;
+}
+.hero p{
+    font-size: 15px;
+    width: 250px;
+    height: 100px;
+}
+/* hero */
+.hero {
+    justify-content: start;
+    height: 400px; 
+    background: url("img/header.png") no-repeat center/cover; 
+}
+/* main */
+
+.main {
+    padding: 20px; 
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.colmn h2{
+    font-size: 35px;
+}
+.colmn p{
+    font-size: 20px;
+    width: 100%;
+}
+    
+    .colmn  {
+        justify-content: center;
+        margin-top: 20px; 
+        text-align: center;
+        font-size: 10px;
+    }
+    .block{
+        display: flex; 
+        gap: 80px; 
+        justify-content: center; 
+    }                             
+        .pt2 {
+            margin-left: 50px;
+            margin-top: 30px; 
+            font-size: 24px; 
+            margin-bottom: 70px; 
+            text-align: center;
+        }
+        .block {
+            align-items: center; 
+            padding-top: 40px; 
+        }     
+        .pt {
+            font-size: 20px; 
+            margin-top: 20px; 
+            margin-bottom: 20px; 
+        }
+        .pt2 {
+            margin-left: 80px;
+            font-size: 18px; 
+        }
+        .block {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .image{
+            width: 100%;
+            max-width: 582px;
+            height: auto;
+        }
+        .row1 {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 2px;
+            flex-wrap: wrap;
+        }
+        
+        .column1 {
+            
+            background-size: cover;
+            background-position: center;
+            background-image: url("img/run.png");
+        }
+        
+        .column2 {
+
+            background-size: cover;
+            background-position: center;
+            background-image: url("img/nig2.png");
+        }
+         .tex div{
+            width: 100%;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: none;
+            text-align: left; 
+         }
+         .tex{
+            margin: 0;
+            padding: 10px;
+         }
+
+        
+        .t1 {
+            width: 100%;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: none;
+            text-align: left;     
+        }
+        .slides{
+            width: 100%;
+        }
+        .slide img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+/* так это у меня конец адаптива)))) */
